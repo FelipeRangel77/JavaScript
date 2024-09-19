@@ -105,28 +105,69 @@
 
  // Slice() - fatia o array sem alterar o arry original -----------
 
- aluno = 'Maria Da Silva Xavier da Cunha'
- a = aluno.slice(6)
- document.write(`<br> ${a}`)
- a1 = aluno.slice(5,14)
- document.write(`<br> ${a1}`)
+//  aluno = 'Maria Da Silva Xavier da Cunha'
+//  a = aluno.slice(6)
+//  document.write(`<br> ${a}`)
+//  a1 = aluno.slice(5,14)
+//  document.write(`<br> ${a1}`)
 
-carro = ['jeta', 'fiat', 'civic', 'corolla', 'ferrari']
+// carro = ['jeta', 'fiat', 'civic', 'corolla', 'ferrari']
 
-c = carro.slice(2)
-document.write(`<br>${c}`)
+// c = carro.slice(2)
+// document.write(`<br>${c}`)
 
-c1 = carro.slice(2,3)
-document.write(`<br>${c1}`)
+// c1 = carro.slice(2,3)
+// document.write(`<br>${c1}`)
 
-c2 = carro.slice(2,5)
-document.write(`<br>${c2}`)
+// c2 = carro.slice(2,5)
+// document.write(`<br>${c2}`)
 
-c3 = carro.slice(-4,-2)
-document.write(`<br>${c3}`)
+// c3 = carro.slice(-4,-2)
+// document.write(`<br>${c3}`)
 
-c4 = carro.slice(-6, -3)
-document.write(`<br>${c4}`)
+// c4 = carro.slice(-6, -3)
+// document.write(`<br>${c4}`)
 
 
 // splice() - 1
+//-----------------------------------------------------------
+
+
+// var numeros = [2,4,6,8,10]
+// var numeros2 = [1,3,5,7,9]
+
+// pares = numeros.every(function(numbers){
+//     return numbers %2 == 0
+// })
+// impares = numeros2.every(function(numbers){
+//     return numbers %2 == 0
+// })
+
+// maior = numeros.every(function(number){
+//     return number > 5
+// })
+
+// document.write(`<br> Todos os números são maiores do que 5 ${maior}`)
+
+
+// var numeros = [1,3,5,6]
+
+// umPar = numeros.some(function(number){
+//     return number %2 ==0
+// })
+
+// frutas = [`banana`,`abacaxi`,`uva`, `laranja`]
+
+//     function f(elementos){ 
+//         return (elementos.indexOf(`an`) > 0)
+//     }
+
+// document.write(`<br>${frutas.filter(f)}`)
+
+// numeros = [1,2,3,4,5,6,7,8,9,10]
+
+// par = numeros.filter(function(number){
+//     return number %2 == 0
+// })
+
+// document.write(`<br> Os numeros paras são: ${par}`)
