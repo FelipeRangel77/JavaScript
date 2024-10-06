@@ -1,0 +1,32 @@
+#box{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    color: white;
+}
+#box1{
+    height: 100px;
+    width: 100px;
+    background-color: purple;
+    color: white;
+}
+#area{
+    height: 100px;
+    width: 100px;
+    background-color: darkblue;
+    color: white;
+}
+#box2{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    color: white;
+}
+#box3{
+    height: 100px;
+    width: 100px;
+    background-color: darkgoldenrod;
+    color: white;
+    position: absolute;
+    cursor: grab;
+}
