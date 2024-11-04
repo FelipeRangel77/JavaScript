@@ -8,7 +8,7 @@ body{
 /* Parte de cima--------------------------------------------------------------------------- */
 #Header {
     display: flex;
-    width: 1200px;
+    width: 1000px;
     height: 80px;
     justify-content: space-between;
     margin: auto;
@@ -84,9 +84,67 @@ body{
 }
 
 #MenuCasa{
-    height: 700px;
+    height: 750px;
     width: 2000px;
-    /* border: 1px solid black; */
+    border: 1px solid black; 
+}
+
+.containerMenu{
+    width: 290px;
+    height: 450px;
+    background-color: #314163d5;
+    color: white;
+    margin: auto;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 350px;
+    right: 300px;
+}
+
+.containerTextMenu{
+    width: 250px;
+    height: 380px;
+}
+
+.titulo{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 30px;
+    color: white;
+}
+
+.lorem{
+    font-size: 13px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 20px;
+    color: rgb(231, 229, 229);
+    line-height: 19px;
+}
+
+.preco{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: -1px;
+    color: white;
+}
+
+.btn{
+    border: 1px solid white;
+    background-color: #314163d5;
+    color: white;
+    width: 180px;
+    height: 40px;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 2px;
+    font-size: 12px;
 }
 
 /* Conteudo de casas--------------------------------------------------- */
@@ -112,12 +170,18 @@ body{
     display: flex;
 }
 
+.textcontainer{
+    display: flex;
+    flex-direction: column;
+}
+
 h1{
     color: #193454;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 24px;
 }
+
 
 h3{
     color: #193454;
@@ -131,5 +195,9 @@ p{
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
+}
+
+#casaRuim{
+    width:87%;
 }
 
