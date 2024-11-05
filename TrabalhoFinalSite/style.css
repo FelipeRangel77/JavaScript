@@ -1,7 +1,4 @@
-body, html{
-    margin: 0;
-    border: 0;
-}
+
 body{
     background-color:rgb(247, 247, 247) ;
 }
@@ -87,7 +84,7 @@ body{
 }
 
 #Home{
-    color: #b29146;
+    color: #b29246;
 }
 
 #Contatos{
@@ -252,4 +249,107 @@ p{
     margin-left: 10px;
     border-radius: 4px;
     font-size: 12px;
+}
+/* Avaliação------------------------------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root{
+    --primary-color:#193454;
+    --primary-color-dark:#1e3d63;
+    --text-dark: #333333;
+    --white:#ffffff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.AV{
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+.AV1{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+
+header{
+    background-image: url(Img/FundoAV_2.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    min-height: 99vh;
+    display: flex;
+    background-size: contain;
+}
+
+/* RESOLVER ALTURA PRA AJEITAR BONITINHO */
+.containerAV{
+    border: 1px solid black;
+    max-width: 1200px;
+    height: auto;
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10rem;
+}
+
+.containerAV_esq h1{
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--primary-color)
+}
+
+.containerAV_esq h1{
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.containerAV_dir{
+    display: grid;
+    gap: 2rem;
+}
+
+.card{
+    padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.card img{
+    max-width: 75px;
+    border-radius: 100%;
+}
+
+.card_container{
+    display: flex;
+    gap: 1rem;
+}
+
+.card_container span i{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.card_details p{
+    font-style: italic;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.card_details h4{
+    text-align: right;
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 500;
+    
 }
