@@ -3,13 +3,21 @@ body,html{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     height: 100%;
-    position: fixed;
-}   
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.container{
+    position: relative;
+    top: 10%;
+    right: -2%;
+}  
 .logines{
     color: white;
-    font-size: 80pt;
+    font-size: 60pt;
     text-align: right;
     margin-right: 20%;
     margin-top: 6%;
@@ -24,7 +32,7 @@ body,html{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    width: 180vh;
+    width: 176vh;
 }
 .email{
     width: 450px; 
@@ -35,7 +43,6 @@ body,html{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
     padding: 5px 15px; 
     box-sizing: border-box;
-     
 }
 .email::placeholder{
     color: black;
@@ -45,7 +52,7 @@ body,html{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    width: 180vh;
+    width: 176vh;
     margin-top: 30px;
 }
 .senha{
@@ -62,16 +69,166 @@ body,html{
     color: black;
     opacity: 0.8;
 }
-
+.container3{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 145vh;
+    margin-top: 10px;
+}
 .relemb input{
     display: none;
 }
 .relemb{
-    height: 1.9%;
-    border-radius: 50%;
+    width: 30px;
+    height: 20px;
+}
+.container4{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 15px;
 }
 .relemb2{
     color: white;
     font-size: 14pt;
     font-family: sans-serif;
+    margin-bottom: 1px;
+}
+.container5{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 150vh;
+    height: 8vb;
+}
+.botao{
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: white;
+    background-color: #b29246bb;
+    font-size: 16pt;
+    font-family: verdana;
+}
+.botao:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.vindo{
+    color: white;
+    font-size: 75pt;
+    position: absolute;
+    left: 2%;
+    bottom: 60%;
+    font-family: sans-serif;
+    text-shadow: 
+        5px 5px 0 black,
+        5px 5px 0 black,
+        5px 5px 0 black,
+        5px 5px 0 black;
+}
+.vindo2{
+    color: rgb(233, 233, 233);
+    text-shadow: 
+        3px 3px 0 black,
+        3px 3px 0 black,
+        3px 3px 0 black,
+        3px 3px 0 black;
+    font-size: 22pt;
+    position: absolute;
+    left: 4%;
+    bottom: 30%;
+    font-family: sans-serif;
+}
+.face{
+    width: 50px;
+    position: absolute;
+    bottom: 15%;
+    left: 13%;
+}
+.insta{
+    width: 50px;
+    position: absolute;
+    bottom: 15%;
+    left: 25%;
+}
+.youtube{
+    width: 50px;
+    position: absolute;
+    bottom: 17%;
+    left: 36%;
+}
+.esq{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right:523px;
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .container, .container1, .container2, .container3, .container4, .container5 {
+        width: 100vw;
+    }
+    .logines {
+        font-size: 40pt;
+        margin-right: 10%;
+    }
+    .vindo {
+        font-size: 50pt;
+    }
+    .vindo2 {
+        font-size: 18pt;
+    }
+    .email, .senha {
+        width: 80%;
+        height: 50px;
+        font-size: 12pt;
+    }
+    .botao {
+        width: 150px;
+        height: 45px;
+        font-size: 14pt;
+    }
+    .face, .insta, .youtube {
+        width: 40px;
+    }
+    .esq {
+        font-size: 12pt;
+    }
+}
+
+@media (max-width: 480px) {
+    .logines {
+        font-size: 25pt;
+        margin-right: 5%;
+    }
+    .vindo {
+        font-size: 35pt;
+    }
+    .vindo2 {
+        font-size: 16pt;
+    }
+    .email, .senha {
+        width: 90%;
+        height: 45px;
+        font-size: 10pt;
+    }
+    .botao {
+        width: 120px;
+        height: 40px;
+        font-size: 12pt;
+    }
+    .face, .insta, .youtube {
+        width: 30px;
+    }
+    .esq {
+        font-size: 10pt;
+    }
 }
