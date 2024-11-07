@@ -312,7 +312,6 @@ header{
     background-size: contain;
 }
 
-/* RESOLVER ALTURA PRA AJEITAR BONITINHO */
 .containerAV{
     /* border: 1px solid black; */
     max-width: 1200px;
@@ -380,3 +379,6 @@ header{
     font-weight: 500;
     
 }
+
+/* Responsividade--------------------------------- */
+
