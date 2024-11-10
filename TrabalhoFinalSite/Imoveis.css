@@ -104,3 +104,62 @@ body{
 #Endereço{
     color: #193454;
 }
+
+/* Imoveis anunciados-------------------------- */
+
+h1, h3, p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1;
+    padding: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+h3{
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+p{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#imoveis{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#imoveis > div{
+    max-width: 31.6%;
+}
+
+#imoveis img{
+    width: 100%;
+}
+
+#imoveis > div a{
+    background-color: burlywood;
+    text-decoration: none;
+    display: block;
+    color: white;
+    margin-top: 15px;
+    padding: 8px 14px;
+    border-radius: 8px;
+}
+
+.containerIM{
+    max-width: 1200px;
+    margin: auto;
+}
+
