@@ -201,7 +201,7 @@ body{
     outline: 1px solid #e6c068;
 }
 
-.inputBox label, .gender-title h6{
+.inputBox label{
     font-size: 0.75rem;
     font-weight: 600;
     color: #000000c0;
@@ -209,27 +209,6 @@ body{
 
 .inputBox input::placeholder{
     color:black
-}
-
-.gender-group{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0.62rem;
-    padding: 0 0.5rem;
-}
-
-.gender-input{
-    display: flex;
-    align-items: center;
-}
-
-.gender-input input{
-    margin-right: 0.35rem;
-}
-
-.gender-input label{
-    font-size: 0.81rem;
-    font-weight: 600;
 }
 
 .enviarDados button{
