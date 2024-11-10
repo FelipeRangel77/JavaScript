@@ -10,12 +10,12 @@ body,html{
     padding: 0;
     overflow: hidden;
 }
-.container{
+.site{
     position: relative;
     top: 10%;
     right: -2%;
 }  
-.logines{
+.login{
     color: white;
     font-size: 60pt;
     text-align: right;
@@ -28,7 +28,7 @@ body,html{
         5px 5px 0 black,
         5px 5px 0 black;
 }
-.container1{
+.container-email{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -48,7 +48,7 @@ body,html{
     color: black;
     opacity: 0.8;
 }
-.container2{
+.container-senha{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -69,7 +69,7 @@ body,html{
     color: black;
     opacity: 0.8;
 }
-.container3{
+.container-checkbox{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -83,19 +83,13 @@ body,html{
     width: 30px;
     height: 20px;
 }
-.container4{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin-bottom: 15px;
-}
 .relemb2{
     color: white;
     font-size: 14pt;
     font-family: sans-serif;
     margin-bottom: 1px;
 }
-.container5{
+.container-botao{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -172,63 +166,200 @@ body,html{
     margin-top: 15px;
 }
 
-@media (max-width: 768px) {
-    .container, .container1, .container2, .container3, .container4, .container5 {
-        width: 100vw;
-    }
-    .logines {
-        font-size: 40pt;
-        margin-right: 10%;
-    }
-    .vindo {
-        font-size: 50pt;
-    }
-    .vindo2 {
-        font-size: 18pt;
-    }
-    .email, .senha {
-        width: 80%;
-        height: 50px;
-        font-size: 12pt;
-    }
-    .botao {
-        width: 150px;
-        height: 45px;
-        font-size: 14pt;
-    }
-    .face, .insta, .youtube {
-        width: 40px;
-    }
-    .esq {
-        font-size: 12pt;
-    }
-}
 
-@media (max-width: 480px) {
-    .logines {
+@media(max-width: 390px) {
+    .login {
         font-size: 25pt;
         margin-right: 5%;
+        position: absolute;
+        left: 40%;
+        top: 100%;
+        text-shadow: 
+        3px 3px 0 black,
+        3px 3px 0 black,
+        3px 3px 0 black,
+        3px 3px 0 black;
     }
     .vindo {
-        font-size: 35pt;
+        font-size: 29pt;
+        position: absolute;
+        left: 5.8%;
+        top: 10%;
+        text-shadow: 
+        3px 3px 0 black,
+        3px 3px 0 black,
+        3px 3px 0 black,
+        3px 3px 0 black;
     }
     .vindo2 {
         font-size: 16pt;
     }
-    .email, .senha {
+    .email{
         width: 90%;
         height: 45px;
         font-size: 10pt;
+        position: absolute;
+        left: 8%;
+        top: 210%;
+    }
+    .senha {
+        width: 90%;
+        height: 45px;
+        font-size: 10pt;
+        position: absolute;
+        left: 8%;
+        top: 290%;
+    }
+    .container-checkbox{
+        position: absolute;
+        right: 29%;
+        top: 320%;
     }
     .botao {
         width: 120px;
         height: 40px;
         font-size: 12pt;
+        position: absolute;
+        left: 36%;
+        top: 450%;
     }
-    .face, .insta, .youtube {
+    .face{
         width: 30px;
+        position: absolute;
+        top: 700%;
+        left: 20%;
+    }
+    .insta {
+        width: 30px;
+        position: absolute;
+        top: 700%;
+        left: 48%;
+    }
+    .youtube {
+        width: 30px;
+        position: absolute;
+        top: 702%;
+        left: 75%;
+    }
+    .esq {
+        font-size: 9pt;
+        position: absolute;
+        top: 480%;
+        left: 28%;
+        width: 150px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .login {
+        font-size: 50pt;
+        margin-right: 10%;
+        position: absolute;
+        bottom: -160%;
+        left: 39.5%;
+    }
+    .vindo {
+        font-size: 60pt;
+        position: absolute;
+        left: 12%;
+        top: -50%;
+    }
+    .vindo2 {
+        display: none;
+    }
+    .email{
+        width: 70%;
+        height: 55px;
+        font-size: 14pt;
+        position: absolute;
+        left: 15%;
+        top: 260%;
+    }
+    .senha {
+        width: 70%;
+        height: 55px;
+        font-size: 14pt;
+        position: absolute;
+        left: 15%;
+        top: 350%;
+    }
+    .botao {
+        width: 180px;
+        height: 45px;
+        font-size: 14pt;
+        position: absolute;
+        left: 41%;
+        top: 500%;
+    }
+    .container-checkbox{
+        position: absolute;
+        right: 61%;
+        top: 400%;
+    }
+    .face{
+        width: 40px;
+        position: absolute;
+        top: 650%;
+        left: 35.5%;
+    }
+    .youtube {
+        width: 40px;
+        position: absolute;
+        top: 653%;
+        left: 60%;
+    }
+    .insta {
+        width: 40px;
+        position: absolute;
+        top: 650%;
+        left: 48%;
     }
     .esq {
         font-size: 10pt;
+        width: 150px;
+        position: absolute;
+        left: 41.9%;
+        top: 550%;
+    }
+}
+
+
+@media(max-width: 1728px) {
+    .login {
+        font-size: 60pt;
+        margin-right: 19%;
+    }
+    .vindo {
+        font-size: 75pt;
+    }
+    .vindo2 {
+        font-size: 20pt;
+        position: absolute;
+    }
+    .email, .senha {
+        width: 450px;
+        height: 60px;
+        font-size: 16pt;
+    }
+    .botao {
+        width: 200px;
+        height: 50px;
+        font-size: 16pt;
+        position: absolute;
+        right: 20%;
+        bottom: -13%;
+    }
+    .container-checkbox{
+        position: absolute;
+        right: 24%;
+    }
+    .face, .insta, .youtube {
+        width: 50px;
+    }
+    .esq {
+        font-size: 12pt;
+        position: absolute;
+        right: -6.2%;
+        bottom: -20%;
     }
 }
