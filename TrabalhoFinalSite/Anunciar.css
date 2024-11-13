@@ -1,0 +1,257 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    font-family: Arial, verdana;
+    padding: 20px;
+    background-color: 247247247;
+    position: absolute;
+    left: 33%;
+}
+button {
+    background-color: rgb(211, 211, 211);
+    color: black;
+    border: none;
+    height: 50px;
+    width: 180px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 9pt;
+    font-family: verdana;
+    transition: transform 200ms ease-in-out;
+    box-shadow: 0px 1px 0px black;
+}
+.right-button {
+    margin-right: 0;
+    margin-left: 350px;
+}
+button:hover {
+    background-color: rgb(107, 106, 106);
+    transform: scale(1.1);
+}
+.right-button a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+.aluguel-button {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+.venda-button {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+form {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+}
+fieldset {
+    border: 1px solid #193454;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0 10px;
+}
+.titulo,
+h2 {
+    color: #193454;
+    margin-bottom: 10px;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="date"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+input[type="file"] {
+    border: none;
+}
+textarea {
+    height: 100px;
+}
+p {
+    margin: 10px 0;
+}
+input[type="file"] {
+    display: none;
+}
+
+#picture__input {
+    display: none;
+}
+
+.picture {
+    width: 400px;
+    aspect-ratio: 16/9;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    border: 2px dashed currentcolor;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: color 300ms ease-in-out, background 300ms ease-in-out;
+    outline: none;
+    overflow: hidden;
+}
+
+.picture:hover {
+    color: #777;
+    background: #ccc;
+}
+
+.picture:active {
+    border-color: turquoise;
+    color: turquoise;
+    background: #eee;
+}
+
+.picture:focus {
+    color: #777;
+    background: #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.picture__img {
+    max-width: 100%;
+}
+.container-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.enviar {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #b29246;
+    font-size: 14pt;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    position: relative;
+}
+.enviar:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.center-enviar {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+}
+.mensagem {
+    width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+.mensagem .sucesso {
+    font-size: 20px;
+    color: green;
+    animation: buttons 0.3s linear;
+    display: none;
+}
+.mensagem .erro {
+    font-size: 20px;
+    color: red;
+    animation: buttons 0.3s linear;
+    display: none;
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .right-button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    form {
+        margin-top: 50px;
+        padding: 10px;
+    }
+    fieldset {
+        padding: 10px;
+    }
+    legend {
+        font-size: 1em;
+    }
+    .enviar {
+        width: 100%;
+        height: 40px;
+    }
+}
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+    button {
+        height: 40px;
+        font-size: 8pt;
+    }
+    .right-button {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+    .header img {
+        margin-left: 0;
+    }
+    .enviar {
+        height: 35px;
+    }
+}
