@@ -3,107 +3,139 @@ body{
     background-color:rgb(247, 247, 247) ;
 }
 /* Parte de cima--------------------------------------------------------------------------- */
-#Header {
-    /* border: 1px solid black; */
-    display: flex;
-    width: 1200px;
-    height: 80px;
-    justify-content: space-between;
-    margin: auto;
-    align-items: center;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.BtnLogo:hover{
-    size: 15px;
-    transition: 0.5s;
+body{
+    background-color:rgb(247, 247, 247) ;
 }
 
-#Login:hover{
-    background-color: #b29146;
-    font-size: 25px;
-    transition: 0.6s;
-    border-radius: 5px;
-}
-
-#Home:hover{
-    background-color: #193454;
-    font-size: 25px;
-    transition: 0.6s;
-    border-radius: 5px;
-}
-
-#Imóvel:hover{
-    background-color: #b29146;
-    font-size: 25px;
-    transition: 0.6s;
-    border-radius: 5px;
-}
-
-#Endereço:hover{
-    background-color: #b29146;
-    font-size: 25px;
-    transition: 0.6s;
-    border-radius: 5px;
-}
-
-#Logo{
-    font-weight: bold;
-    font-size: 18px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:#193454;
+a {
+    color: #193454;
     text-decoration: none;
+    transition: 0.3s;
 }
 
-#Header ul {
-    display: flex;
-    align-items: center;
+a:hover {
+    opacity: 0.7;
 }
 
-#Header ul li {
-    list-style: none;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
-#Header ul li a{
-    font-size: 22px;
-    font-weight: bold;
-    text-decoration: none;
-    display: flex;
-}
-
-#Logo Span{
+.logo span{
     color: #b29146;
 }
 
-#imgLogin{
-    height: 26px;
-    width: 26px;
+nav {
     display: flex;
-    margin-right: 10px;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(247, 247, 247);
+    height: 8vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+    padding-right: 20px;
 }
 
 #Login{
-    margin-right: 200px;
     color: #193454;
+    font-size: 20px;
 }
 
 #Home{
     color: #b29246;
+    font-size: 20px;
 }
 
-#Contatos{
+#Imoveis{
     color: #193454;
+    font-size: 20px;
 }
 
-#Imóvel{
+#Contato{
     color: #193454;
-    display: flex;
+    font-size: 20px;
 }
 
-#Endereço{
-    color: #193454;
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: black;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+    body {
+    overflow-x: hidden;
+    }
+    .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: rgb(247, 247, 247);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+    }
+    .mobile-menu {
+    display: block;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+    opacity: 0;
+    transform: translateX(50px);
+    }
+    to {
+    opacity: 1;
+    transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
 }
 
 /* Meio do site--------------------------------------------------------------------------------------- */
@@ -303,7 +335,7 @@ p{
     font-size: 20px;
 }
 
-header{
+.Avaliacao{
     background-image: url(Img/FundoAV2.png);
     background-position: bottom center;
     background-repeat: no-repeat;

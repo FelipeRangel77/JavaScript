@@ -6,36 +6,34 @@
     <title>Maisonnette imóveis</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>  
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
 </head>
 <body>
-    <section id="Header">
-    <a href="index.html" id="Logo">Maisonnette <span>imóveis</span></a>
-    <ul>
-        <li>
-            <img id="imgLogin" src="Img/avatar.png">
-            <a href="Login.html" id="Login">Login</a>
-        </li>
-        <li>
-            <a href="index.html" id="Home">Home</a>
-        </li>
-        <li>
-            <a href="Imoveis.html" id="Imóvel">Imóveis</a>
-        </li>
-        <li>
-            <a href="Endereço.html" id="Endereço">Contato</a>
-        </li>
-    </ul>
-        <a href="https://www.youtube.com/watch?v=K7iTn1ydDQc" >
-            <img src="Img/Youtube.png" class="BtnLogo">
-        </a>
-        <a href="https://www.instagram.com/maisonnette_imoveis_ofc/" >
-            <img src="Img/Instagram.png" class="BtnLogo">
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=61560519184461" >
-            <img src="Img/Facebook.png" class="BtnLogo">
-        </a>
-</section>
+    <header>
+        <nav>
+            <a class="logo" href="/">Maisonnette <span>Imóveis</span></a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="Login.html" id="Login">Login</a></li>
+                <li><a href="index.html" id="Home">Home</a></li>
+                <li><a href="Imoveis.html" id="Imoveis">Imóveis</a></li>
+                <li><a href="Contato.html" id="Contato">Contato</a></li>
+                <li><a href="https://www.youtube.com/watch?v=K7iTn1ydDQc" >
+                    <img src="Img/Youtube.png" class="BtnLogo">
+                </a></li>
+                <li><a href="https://www.instagram.com/maisonnette_imoveis_ofc/" >
+                    <img src="Img/Instagram.png" class="BtnLogo">
+                </a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=61560519184461" >
+                    <img src="Img/Facebook.png" class="BtnLogo">
+                </a></li>
+            </ul>
+        </nav>
+        </header>
 <section>
     <div id="MenuCasa">
         <img src="Img/Casinha1.jpg" id="Casinha">
@@ -90,7 +88,7 @@
             <a href="Imoveis.html" id="Anuncio"><input type="button" value="Anuncie Já" id="Anuncio"></a>
         </div>
     </div>
-    <header>
+    <div class="Avalaiacao">
         <div class="containerAV">
             <div class="containerAV_esq">
                 <h1 class="AV">Veja algumas avaliações feitas sobre nossa empresa</h1>
@@ -139,6 +137,7 @@
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
