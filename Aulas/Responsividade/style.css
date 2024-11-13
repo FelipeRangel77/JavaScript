@@ -1,10 +1,15 @@
 * {
     margin: 0;
     padding: 0;
+    
+}
+
+body{
+    background-color:rgb(247, 247, 247) ;
 }
 
 a {
-    color: #fff;
+    color: #193454;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -19,19 +24,17 @@ a:hover {
     letter-spacing: 4px;
 }
 
+.logo span{
+    color: #b29146;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    background: #23232e;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(247, 247, 247);
     height: 8vh;
-}
-
-main {
-    background: url("bg.jpg") no-repeat center center;
-    background-size: cover;
-    height: 92vh;
 }
 
 .nav-list {
@@ -45,9 +48,24 @@ main {
     padding-right: 20px;
 }
 
-#Apps{
-    display: flex;
-    padding: 0 10px;
+#Login{
+    color: #193454;
+    font-size: 20px;
+}
+
+#Home{
+    color: #b29246;
+    font-size: 20px;
+}
+
+#Imoveis{
+    color: #193454;
+    font-size: 20px;
+}
+
+#Contato{
+    color: #193454;
+    font-size: 20px;
 }
 
 .mobile-menu {
@@ -58,7 +76,7 @@ main {
 .mobile-menu div {
     width: 32px;
     height: 2px;
-    background: #fff;
+    background: black;
     margin: 8px;
     transition: 0.3s;
 }
@@ -73,7 +91,7 @@ main {
     right: 0;
     width: 50vw;
     height: 92vh;
-    background: #23232e;
+    background: rgb(247, 247, 247);
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -115,3 +133,4 @@ main {
 .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
 }
+/* ------------------------------------------------------------------ */
