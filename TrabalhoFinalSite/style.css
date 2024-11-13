@@ -6,6 +6,8 @@ body{
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    z-index: 0;
 }
 
 body{
@@ -26,6 +28,7 @@ a:hover {
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 4px;
+    width: fit-content;
 }
 
 .logo span{
@@ -39,6 +42,7 @@ nav {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: rgb(247, 247, 247);
     height: 8vh;
+    z-index: 100;
 }
 
 .nav-list {
@@ -87,27 +91,28 @@ nav {
 
 @media (max-width: 999px) {
     body {
-    overflow-x: hidden;
+        overflow-x: hidden;
     }
     .nav-list {
-    position: absolute;
-    top: 8vh;
-    right: 0;
-    width: 50vw;
-    height: 92vh;
-    background: rgb(247, 247, 247);
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in;
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: rgba(247, 247, 247, 1);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        z-index: 100;
     }
     .nav-list li {
-    margin-left: 0;
-    opacity: 0;
+        margin-left: 0;
+        opacity: 0;
     }
     .mobile-menu {
-    display: block;
+        display: block;
     }
 }
 
@@ -142,8 +147,9 @@ nav {
 
 #Casinha{
     width: 100%;
-    height: auto;
+    height: 500px;
     justify-content:center;
+    z-index: 2;
 }
 
 #MenuCasa{
@@ -154,7 +160,7 @@ nav {
 
 .containerMenu{
     width: 290px;
-    height: 450px;
+    height: fit-content;
     background-color: #314163d5;
     color: white;
     margin: auto;
@@ -164,13 +170,16 @@ nav {
     align-items: center;
     justify-content: center;
     position: absolute;
+    text-align: center;
+    padding: 10px 0px;
     top: 350px;
-    right: 300px;
+    right: 10%;
+    z-index: 0;
 }
 
 .containerTextMenu{
     width: 250px;
-    height: 380px;
+    height: fit-content;
 }
 
 .titulo{
@@ -186,6 +195,8 @@ nav {
     padding-bottom: 20px;
     color: rgb(231, 229, 229);
     line-height: 19px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .preco{
@@ -220,7 +231,7 @@ nav {
 /* Conteudo de casas--------------------------------------------------- */
 
 .container{
-    width: 1200px;
+    width: 100%;
     margin: auto;
     /* border: 1px solid black; */
     align-items: center;
@@ -229,7 +240,7 @@ nav {
 }
 
 .container1{
-    width: 900px;
+    width: fit-content;
     margin: auto;
     /* border: 1px solid black; */
     display: flex;
@@ -241,9 +252,12 @@ nav {
 }
 
 .textcontainer{
+    max-width: 900px;
     display: flex;
     flex-direction: column;
 }
+
+
 
 h1{
     color: #193454;
@@ -336,7 +350,7 @@ p{
 }
 
 .Avaliacao{
-    background-image: url(Img/FundoAV2.png);
+    background-image: url("Img/FundoAV2.png");
     background-position: bottom center;
     background-repeat: no-repeat;
     min-height: 99vh;
@@ -349,9 +363,8 @@ p{
     max-width: 1200px;
     height: auto;
     margin: auto;
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 20px;
+    display: flex;
     gap: 10rem;
 }
 
@@ -367,12 +380,14 @@ p{
     margin-bottom: 1rem;
 }
 
-.containerAV_dir{
-    display: grid;
+.ContainerAV_dir{
+    display: flex;
     gap: 2rem;
+    flex-direction: column;
 }
 
 .card{
+    width: 460px;
     padding: 2rem;
     display: flex;
     align-items: flex-start;
@@ -414,3 +429,39 @@ p{
 
 /* Responsividade--------------------------------- */
 
+@media (max-width: 1165px) {
+    .logo {
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .containerAV {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .AV{
+        text-align: center;
+    }
+}
+
+@media (max-width: 750px) {
+    #Casinha {
+        height: 300px;
+    }
+    .containerMenu {
+        width: 200px;
+        top: 100px;
+    }
+    #MenuCasa {
+        height: 500px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    #Casinha {
+        height: 250px;
+    }
+}

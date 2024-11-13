@@ -192,3 +192,9 @@ p{
     margin: auto;
 }
 
+@media (max-width: 1170px) {
+    #imoveis {
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+}

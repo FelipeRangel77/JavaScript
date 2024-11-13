@@ -6,12 +6,12 @@
     <title>Maisonnette imóveis</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>  
     <link rel="stylesheet" href="Contato.css">
-    <script src="Contato.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <a class="logo" href="/">Maisonnette <span>Imóveis</span></a>
+            <a class="logo" href="#">Maisonnette <span>Imóveis</span></a>
             <div class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -35,29 +35,34 @@
         </nav>
         </header>
     <section class="section">
-    <H1>Contatos</H1>
-    <div id="containerForm">
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.98163550779!2d-43.032396725512626!3d-22.9509034394476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9986175421a843%3A0xbfd04bbfef91c294!2sR.%20Regina%20C%C3%A9lia%20Sant%20Ana%20Dias%20-%20Itaipu%2C%20Niter%C3%B3i%20-%20RJ%2C%2024320-330!5e0!3m2!1spt-BR!2sbr!4v1730980263703!5m2!1spt-BR!2sbr"" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <form>
-            <h3>Entrar em Contato</h3>
-
-            <div class="inputForm">
-                <!-- <span><ion-icon name="person-outline"></ion-icon></span> -->
-                <input type="text" placeholder="Nome">
+        <h1>Contatos</h1>
+        <div id="containerForm">
+            <div class="container-form">
+                <form>
+                    <h3>Mande um email</h3>
+                
+                    <div class="inputForm">
+                        <!-- <span><ion-icon name="person-outline"></ion-icon></span> -->
+                        <input type="text" placeholder="Nome">
+                    </div>
+                
+                    <div class="inputForm">
+                        <!-- <span><ion-icon name="paper-plane-outline"></ion-icon></span> -->
+                        <input type="email" placeholder="Email">
+                    </div>
+                
+                    <div class="inputForm">
+                        <!-- <span><ion-icon name="call"></ion-icon></span> -->
+                        <input type="Text" placeholder="Fale Conosco">
+                    </div>
+                    <button>Enviar Mensagem</button>
+                </form>
             </div>
-
-            <div class="inputForm">
-                <!-- <span><ion-icon name="paper-plane-outline"></ion-icon></span> -->
-                <input type="email" placeholder="Email">
+            <div class="container-map">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.98163550779!2d-43.032396725512626!3d-22.9509034394476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9986175421a843%3A0xbfd04bbfef91c294!2sR.%20Regina%20C%C3%A9lia%20Sant%20Ana%20Dias%20-%20Itaipu%2C%20Niter%C3%B3i%20-%20RJ%2C%2024320-330!5e0!3m2!1spt-BR!2sbr!4v1730980263703!5m2!1spt-BR!2sbr"" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-
-            <div class="inputForm">
-                <!-- <span><ion-icon name="call"></ion-icon></span> -->
-                <input type="Text" placeholder="Fale Conosco">
-            </div>
-            <button>Enviar Mensagem</button>
-        </form>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
