@@ -231,3 +231,29 @@ body{
     font-weight: 500;
     color: white;
 }
+
+@media screen and (max-width:1498px) {
+    .form-image {
+        display:none;
+    }
+    .ContainerAG {
+        width: 50%;
+    }
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1197px) {
+    .ContainerAG{
+        width: 90%;
+        height: auto;
+    }
+    .inputGroup{
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 20rem;
+        padding-right: 2rem;
+    }
+}
