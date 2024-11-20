@@ -54,9 +54,9 @@
 
 // objeto Date()
 
-const data1 = new Date("2024-06-30")
+// const data1 = new Date("2024-06-30")
 
-const data2 = new Date("2024-07-05")
-const diferencaEmDias = Math.abs((data2-data1) / (1000 * 60 * 60 * 24))
+// const data2 = new Date("2024-07-05")
+// const diferencaEmDias = Math.abs((data2-data1) / (1000 * 60 * 60 * 24))
 
-console.log(diferencaEmDias)
+// console.log(diferencaEmDias)
