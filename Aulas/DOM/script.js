@@ -1,7 +1,7 @@
 // Questão 1
-var cores = ["Vermelho","Azul", "Verde"]
-var removida = cores.splice(0, 1, "amarelo")
-console.log("Cor Removida", removida)
+// var cores = ["Vermelho","Azul", "Verde"]
+// var removida = cores.splice(0, 1, "amarelo")
+// console.log("Cor Removida", removida)
 
 // questão final AV1
 
